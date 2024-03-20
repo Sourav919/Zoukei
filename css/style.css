@@ -44,6 +44,7 @@ body {
      font-family: 'Poppins', sans-serif;
      line-height: 1.80857;
      font-weight: normal;
+     background-image: linear-gradient(#fdfcfb 0%, #e2d1c3 100%);
 }
 
 a {
@@ -154,6 +155,7 @@ a,
 
 img {
      max-width: 100%;
+     border-radius: 800px;
      height: auto;
 }
 
@@ -314,14 +316,23 @@ button {
 }
 
 .logo {
-     padding-top: 14px;
-}
+     position: fixed;
+     top: 1;
+     left: 1;
+     -webkit-transform: scale(0.5); /* Safari, Chrome, Opera */
+     -moz-transform: scale(0.5); /* Firefox */
+     -ms-transform: scale(0.5); /* IE 9 */
+     -o-transform: scale(0.5); /* Opera */s
+     transform: scale(0.5);
+     transform-origin: top left;
+ }
+ 
 
 
 /** banner section **/
 
 .banner_main {
-     background-image: linear-gradient(  rgb(157, 169, 170) 9.2%, rgb(249, 249, 249) 103.9% );
+     background-image: linear-gradient(#fdfcfb 0%, #e2d1c3 100%);
      padding: 198px 0px 90px 0px;
 }
 
@@ -336,6 +347,7 @@ button {
      padding-bottom: 45px;
      font-weight: bold;
      text-transform: uppercase;
+     
 }
 
 .text-bg .read_more {
@@ -345,6 +357,7 @@ button {
      display: block;
      margin: 0 auto;
      margin-top: 44px;
+   
 }
 
 #banner1 .carousel-caption {
@@ -432,15 +445,15 @@ button {
 /** about section **/
 
 .about {
-     border-bottom: #000 solid 1px;
+     /* border-bottom: #000 solid 1px; */
      padding: 130px 0 90px 0;
-     background-image: linear-gradient(  rgb(157, 169, 170) 9.2%, rgb(249, 249, 249) 103.9% );
+     background-image: linear-gradient( #e2d1c3 100%, #fdfcfb 0%);
 }
 
-.about .about_img {
+/* .about .about_img {
      margin-left: -40px;
-}
-
+} */
+/* 
 .about .titlepage::before {
      position: absolute;
      content: "";
@@ -451,7 +464,7 @@ button {
      background-repeat: no-repeat;
      top: -27px;
      z-index: -1;
-}
+} */
 
 .about .about_img figure {
      margin: 0;
@@ -461,25 +474,25 @@ button {
      /* border: #000 solid 1px; */
      padding: 40px 40px;
      z-index: 10018;
-     background: #fff;
+     background: #dbb4e5;
      margin-right: 40px;
      border-radius: 12px;
 }
 
 .about .titlepage p {
-     color: #2a2a2c;
-     font-size: 17px;
+     color: #000000;
+     font-size: 22px;
      line-height: 35px;
      font-weight: 400;
      padding-top: 20px;
 }
 
-.about .read_more {
+/* .about .read_more {
      border: #1a1a1a solid 2px;
      color: #1a1a1a;
      font-weight: 500;
      margin-top: 44px;
-}
+} */
 
 
 /** end about section **/
@@ -489,8 +502,8 @@ button {
 
 .glasses {
      background: #fff;
-     /* //margin-top: 90px; */
-     background-image: linear-gradient(  rgb(157, 169, 170) 9.2%, rgb(249, 249, 249) 103.9% );
+     padding-top: 2%;
+     background-image: linear-gradient( #e2d1c3 100%, #fdfcfb 0%);
 }
 
 .glasses .titlepage {
@@ -506,15 +519,15 @@ button {
 }
 
 .blu {
-     color: #021013;
+     color: #161818;
      text-transform: initial;
-     font-family: 'Brush Script MT', cursive;
+     font-family: sans-serif;
 }
 
 .glasses .glasses_box {
      text-align: center;
-     border: #555556 solid 1px;
-     border-radius: 2px;
+     border: #130e30 solid 1px;
+     border-radius: 20px;
      padding: 120px 0px 30px 0px;
      margin-bottom: 30px;
 }
@@ -524,7 +537,7 @@ button {
 }
 
 .glasses .glasses_box h3 {
-     color: #100d0d;
+     color: #161515;
      font-size: 22px;
      line-height: 20px;
      padding: 70px 0px 9px 0px;
@@ -542,7 +555,8 @@ button {
      font-weight: 500;
      display: block;
      margin: 0 auto;
-     margin-top: 44px;
+     margin-top: 20px;
+     margin-bottom: 160px;
 }
 
 
@@ -552,10 +566,10 @@ button {
 /** Our shop section **/
 
 .shop {
-     margin-top: 90px;
-     background: #fefdf9;
-     border-top: #f2f1ed solid 1px;
-     border-bottom: #f2f1ed solid 1px;
+     
+     background-image: linear-gradient( #e2d1c3 100%, #fdfcfb 0%);
+     /* border-top: #f2f1ed solid 1px; */
+     /* border-bottom: #f2f1ed solid 1px; */
 }
 
 .shop .shop_img figure {
@@ -572,13 +586,15 @@ button {
 
 .shop .max_width {
      text-align: left;
-     background: #030404;
+     background: #4f0c4b;
+     border-radius: 10px;
      height: 100%;
      padding-top: 86px;
      padding-left: 50px;
      padding-bottom: 90px;
      display: flex;
      flex-wrap: wrap;
+     margin-bottom: -2px;
 }
 
 .shop .titlepage {
@@ -596,16 +612,17 @@ button {
 }
 
 .shop .titlepage p {
-     color: #fff;
-     font-size: 17px;
-     line-height: 30px;
+     color: #fcfafa;
+     font-size: 29px;
+     font-weight:300;
+     line-height: 35px;
      padding: 40px 0px 80px 0;
      width: 100%;
      display: inline-block;
 }
 
 .shop .titlepage .read_more {
-     color: #fff !important
+     color: #f6eaea !important
 }
 
 
@@ -615,9 +632,11 @@ button {
 /** clients section **/
 
 .clients {
-     /* padding: 90px 0 70px 0; */
-     background-image: linear-gradient(  rgb(157, 169, 170) 9.2%, rgb(249, 249, 249) 103.9% );
-}
+     padding: 90px 70px 70px 90px;
+     background-image: linear-gradient(#fdfcfb 0%, #e2d1c3 100%);
+ }
+ 
+ 
 
 .clients .titlepage {
      text-align: center;
@@ -632,7 +651,7 @@ button {
 }
 
 .clients_box h3 {
-     color: #2a2a2c;
+     color: #030319;
      font-size: 26px;
      line-height: 30px;
      padding-top: 23px;
@@ -640,7 +659,7 @@ button {
 }
 
 .clients_box p {
-     color: #2a2a2c;
+     color: #2a2a90;
      font-size: 17px;
      line-height: 30px;
 }
@@ -651,7 +670,7 @@ button {
 }
 
 .clients_box {
-     border: #606060 solid 1px;
+     border: #000000 solid 1px;
      padding: 40px 32px 40px 0px;
      float: left;
      text-align: left;
@@ -673,11 +692,11 @@ button {
      width: 20px;
      height: 20px;
      border-radius: 20px;
-     background: #111;
+     background: #cfbfbf;
 }
 
 #myCarousel .carousel-indicators .active {
-     background: #8c8a8a;
+     background: #0f4036;
 }
 
 #myCarousel .carousel-control-prev,
@@ -693,12 +712,11 @@ button {
 
 .contact {
      margin-top: 90px;
-     background: rgb(207,255,246);
-     background-image: linear-gradient(  rgb(157, 169, 170) 9.2%, rgb(249, 249, 249) 103.9% );
+     background-image: linear-gradient(to top, #695151 0%, #ffe8ed 100%);
 }
 
 .contact .main_form h3 {
-     color: #4b4b4c;
+     color: #000000;
      font-size: 27px;
      line-height: 30px;
      text-align: center;
@@ -709,29 +727,31 @@ button {
 
 #map {
      height: 100%;
-     min-height: 732px;
+     min-height: 802px;
 }
 
 .main_form {
      position: absolute;
      z-index: 999;
-     background: linear-gradient(to bottom , #d1b581, #dbebd9);
+     background-image: url(../mainform.jpg);
+     background-size: cover; /* or background-size: contain; */
      padding: 40px 50px;
      margin-top: 107px;
      border-radius: 25px;
      margin-left: 2px;
-     
-}
+     font-size: 20px;
+ }
+ 
 
 .main_form .contactus {
-     border-bottom: #111111 solid 1px;
+     border-bottom: #000000 solid 1px;
      margin-bottom: 25px;
      width: 100%;
      height: 57px;
      background: transparent;
-     color: #4b4b4c;
-     font-size: 18px;
-     font-weight: normal;
+     color: #000000;
+     font-size: 20px;
+     font-weight: 600;
      border-top: inherit;
      border-left: inherit;
      border-right: inherit;
@@ -744,10 +764,10 @@ button {
      padding-top: 40px;
      padding-bottom: 14px;
      background: transparent;
-     color: #4b4b4c;
-     ;
-     font-size: 18px;
-     font-weight: normal;
+     color: #000000;
+     font-size: 20px;
+     font-weight: 600;
+   
      border-top: inherit;
      border-left: inherit;
      border-right: inherit;
@@ -756,9 +776,9 @@ button {
 .send_btn {
      background: #03cafc;
      font-weight: 600;
-     font-size: 18px;
+     font-size: 20px;
      width: 100%;
-     color: #fff;
+     color: #fffbfb;
      height: 50px;
      border-radius: 30px;
      margin-top: 20px;
@@ -767,8 +787,8 @@ button {
 }
 
 .send_btn:hover {
-     background: #4b4b4c;
-     transition: ease-in all 0.5s;
+     background: #04042d;
+     transition: ease-in all 0.1s;
 }
 
 #request *::placeholder {
@@ -783,8 +803,9 @@ button {
 /** footer **/
 
 .footer {
-     background: #252525;
-     padding-top: 90px;
+     background-color: #000;
+     padding-top: 40px;
+     padding-bottom: 10px;
      text-align: center;
      font-family: 'Roboto', sans-serif;
 }
