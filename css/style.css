@@ -104,6 +104,7 @@ h6 {
      -webkit-box-sizing: border-box;
      -moz-box-sizing: border-box;
      box-sizing: border-box;
+    
 }
 
 h1 a,
@@ -275,7 +276,7 @@ button {
 
 .navigation.navbar-dark .navbar-nav .nav-link:focus,
 .navigation.navbar-dark .navbar-nav .nav-link:hover {
-     color: #03cafc;
+     color: #51595c;
 }
 
 .navigation.navbar-dark .navbar-nav .active>.nav-link,
@@ -290,7 +291,7 @@ button {
 }
 
 .login_btn a {
-     background: #03cafc;
+     background: #0d4c5c;
      padding: 9px 32px !important;
      display: inline;
      border-radius: 20px;
@@ -299,7 +300,7 @@ button {
 }
 
 .login_btn a:hover {
-     background: #000 !important;
+     background: #34bfd4 !important;
 }
 
 .sea_icon a {
@@ -312,6 +313,7 @@ button {
      background: transparent;
      position: absolute;
      z-index: 999;
+     color:rgb(255, 255, 255);
      
 }
 
@@ -322,7 +324,7 @@ button {
      -webkit-transform: scale(0.5); /* Safari, Chrome, Opera */
      -moz-transform: scale(0.5); /* Firefox */
      -ms-transform: scale(0.5); /* IE 9 */
-     -o-transform: scale(0.5); /* Opera */s
+     -o-transform: scale(0.5); /* Opera */
      transform: scale(0.5);
      transform-origin: top left;
  }
@@ -450,10 +452,10 @@ button {
      background-image: linear-gradient( #e2d1c3 100%, #fdfcfb 0%);
 }
 
-/* .about .about_img {
+.about .about_img {
      margin-left: -40px;
 } */
-/* 
+/* /* 
 .about .titlepage::before {
      position: absolute;
      content: "";
@@ -500,6 +502,39 @@ button {
 
 /** Our  Glasses section **/
 
+
+   .glasses_box {
+      background-color: rgb(248, 218, 218); /* Default background color */
+      transition: background-color 0.3s ease; /* Smooth transition */
+      overflow: hidden; /* Hide content initially */
+   }
+
+   .glasses_box:hover {
+      background-color: rgb(0, 0, 0); /* Change background color on hover */
+   }
+
+   .glasses_box:hover figure img {
+      transform: scale(1.4); /* Scale image on hover */
+   }
+
+   .glasses_box:hover p,
+   .glasses_box:hover h3 {
+      opacity: 1; /* Show text on hover */
+      transform: translateY(0); /* Slide text into view on hover */
+   }
+
+   .glasses_box figure img {
+      transition: transform 0.3s ease; /* Smooth image scale transition */
+   }
+
+   .glasses_box h3,
+   .glasses_box p {
+      opacity: 0; /* Initially hide text */
+      transition: opacity 0.3s ease, transform 0.3s ease; /* Smooth transition for text */
+      transform: translateY(20px); /* Slide text down */
+   }
+
+
 .glasses {
      background: #fff;
      padding-top: 2%;
@@ -512,14 +547,17 @@ button {
 }
 
 .glasses .titlepage p {
-     font-size: 17px;
+     font-size: 32px;
+     font-weight: 700;
      line-height: 30px;
-     font-weight: 400;
+     /* font-weight: 400; */
      padding-top: 10px;
 }
 
 .blu {
-     color: #161818;
+     color: #eaeaea;
+     font-size: 32px;
+     font-weight: 700;
      text-transform: initial;
      font-family: sans-serif;
 }
@@ -544,7 +582,7 @@ button {
 }
 
 .glasses .glasses_box p {
-     color: #2a2a2c;
+     color: #ececf3;
      font-size: 18px;
      line-height: 28px;
      font-weight: 400;
@@ -617,12 +655,13 @@ button {
      font-weight:300;
      line-height: 35px;
      padding: 40px 0px 80px 0;
-     width: 100%;
+     width: 250%;
      display: inline-block;
 }
 
 .shop .titlepage .read_more {
      color: #f6eaea !important
+     
 }
 
 
